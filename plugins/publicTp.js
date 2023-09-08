@@ -115,6 +115,8 @@ mc.regPlayerCmd("publictp deop", "§r移除公共传送点管理员", (pl, args)
 mc.regPlayerCmd("publictp help", "显示帮助", (pl) => {
     pl.tell("公共传送点插件帮助");
     pl.tell("publictp - 打开公共传送点菜单");
+    pl.tell("publictp mgr - 自设公共传送点管理");
+    pl.tell("publictp new - 新建自设公共传送点");
     pl.tell("§6publictp op <玩家名/XUID> - 添加公共传送点管理员");
     pl.tell("§6publictp deop <玩家名/XUID> - 移除公共传送点管理员");
     pl.tell("publictp help - 显示帮助");
@@ -159,8 +161,10 @@ function selfPointEditor(pl, name = "", hint = "", index = null, data = new Obje
         return;
     }
     const fm = mc.newCustomForm();
+    const label1 = `传送点位置: ${pl.pos}\n\n§6创建公共传送点需要花费 ${newChargeFee} 金币,\n创建成功后无法修改坐标\n\n§7在下方输入传送点名称后点击“提交”按钮即可创建`;
+    const label2 = `传送点位置: (${data.pos[0].toFixed(2)}, ${data.pos[1].toFixed(2)}, ${data.pos[2].toFixed(2)}) ${data.pos[3]}\n\n§7在下方编辑传送点名称后点击“提交”按钮即可更改`;
     fm.setTitle("自设公共传送点");
-    fm.addLabel(`传送点位置: ${pl.pos}\n\n§6创建公共传送点需要花费 ${newChargeFee} 金币,\n创建成功后无法修改坐标\n\n§7在下方输入传送点名称后点击“提交”按钮即可创建`);
+    fm.addLabel(index == null ? label1 : label2);
     fm.addInput("传送点名称", "为传送点起一个名字", name);
     fm.addLabel(hint);
     pl.sendForm(fm, (pl, id) => {

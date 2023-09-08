@@ -100,7 +100,7 @@ function redeem(player, cdk) {
 
 function markAsUsed(cdk, xuid) {
     const used = new JsonConfigFile(usedCdkFilePath);
-    let usedCdkPlayers = used.get("used");
+    let usedCdkPlayers = used.get(cdk);
     if (usedCdkPlayers != null) {
         usedCdkPlayers.push(xuid);
     } else {
