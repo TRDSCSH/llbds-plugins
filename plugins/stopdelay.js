@@ -40,11 +40,11 @@ function stopServer() {
     }, DELAY)
 }
 
-//线上关服
-mc.listen("onPlayerCmd", (player, cmd) => {
-    if (!player.isOP() || cmd != "stop" || stop_status) return;
-    stopServer();
-    return false;
-})
+// //线上关服
+// mc.listen("onPlayerCmd", (player, cmd) => {
+//     if (!player.isOP() || cmd != "stop" || stop_status) return;
+//     stopServer();
+//     return false;
+// })
 
 ll.registerPlugin("stopdelay", "关服延迟与线上关服", [1, 0, 0, Version.Release], { Author: "Minimouse" })
