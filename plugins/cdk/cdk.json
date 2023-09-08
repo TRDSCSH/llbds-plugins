@@ -1,0 +1,39 @@
+{
+    "114514": [
+        "嗯哼哼啊啊啊啊啊啊啊...",
+        {
+            "type": 0,
+            "value": "§g§l黄金会员§r"
+        }
+    ],
+    "g1thub": [
+        "你是...程序员?",
+        {
+            "type": 0,
+            "value": "§lGIT§6HUB§r"
+        },
+        {
+            "type": 1,
+            "value": 1000
+        },
+        {
+            "type": 2,
+            "value": "{\"Count\":9b,\"Damage\":0s,\"Name\":\"minecraft:filled_map\",\"WasPickedUp\":0b,\"tag\":{\"display\":{\"Name\":\"GITHUB\"},\"map_uuid\":-897648164779L}}"
+        }
+    ],
+    "new": [
+        "欢迎新人！",
+        {
+            "type": 0,
+            "value": "§d萌新§r"
+        },
+        {
+            "type": 1,
+            "value": 1000
+        },
+        {
+            "type": 2,
+            "value": "{\"Block\":{\"name\":\"minecraft:chest\",\"states\":{\"facing_direction\":0},\"version\":18090528},\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:chest\",\"WasPickedUp\":0b,\"tag\":{\"Findable\":0b,\"Items\":[{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:iron_helmet\",\"Slot\":0b,\"WasPickedUp\":0b},{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:iron_chestplate\",\"Slot\":1b,\"WasPickedUp\":0b},{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:iron_leggings\",\"Slot\":2b,\"WasPickedUp\":0b},{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:iron_boots\",\"Slot\":3b,\"WasPickedUp\":0b},{\"Count\":32b,\"Damage\":0s,\"Name\":\"minecraft:iron_ingot\",\"Slot\":4b,\"WasPickedUp\":0b},{\"Block\":{\"name\":\"minecraft:oak_log\",\"states\":{\"pillar_axis\":\"y\"},\"version\":18090528},\"Count\":32b,\"Damage\":0s,\"Name\":\"minecraft:oak_log\",\"Slot\":5b,\"WasPickedUp\":0b},{\"Count\":1b,\"Damage\":14s,\"Name\":\"minecraft:bed\",\"Slot\":6b,\"WasPickedUp\":0b},{\"Count\":16b,\"Damage\":0s,\"Name\":\"minecraft:name_tag\",\"Slot\":7b,\"WasPickedUp\":0b},{\"Count\":16b,\"Damage\":0s,\"Name\":\"minecraft:glow_frame\",\"Slot\":8b,\"WasPickedUp\":0b},{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:iron_sword\",\"Slot\":9b,\"WasPickedUp\":0b},{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:iron_axe\",\"Slot\":10b,\"WasPickedUp\":0b},{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:iron_pickaxe\",\"Slot\":11b,\"WasPickedUp\":0b},{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:shield\",\"Slot\":12b,\"WasPickedUp\":0b},{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:totem_of_undying\",\"Slot\":13b,\"WasPickedUp\":0b},{\"Block\":{\"name\":\"minecraft:planks\",\"states\":{\"wood_type\":\"oak\"},\"version\":18090528},\"Count\":64b,\"Damage\":0s,\"Name\":\"minecraft:planks\",\"Slot\":14b,\"WasPickedUp\":0b},{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:saddle\",\"Slot\":15b,\"WasPickedUp\":0b},{\"Count\":1b,\"Damage\":2s,\"Name\":\"minecraft:empty_map\",\"Slot\":16b,\"WasPickedUp\":0b},{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:clock\",\"Slot\":17b,\"WasPickedUp\":0b},{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:fishing_rod\",\"Slot\":18b,\"WasPickedUp\":0b,\"tag\":{\"RepairCost\":3,\"ench\":[{\"id\":23s,\"lvl\":3s},{\"id\":24s,\"lvl\":3s}]}},{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:trident\",\"Slot\":19b,\"WasPickedUp\":0b,\"tag\":{\"RepairCost\":1,\"ench\":[{\"id\":31s,\"lvl\":3s}]}},{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:bow\",\"Slot\":20b,\"WasPickedUp\":0b,\"tag\":{\"RepairCost\":7,\"ench\":[{\"id\":21s,\"lvl\":1s},{\"id\":20s,\"lvl\":2s},{\"id\":22s,\"lvl\":1s}]}},{\"Count\":32b,\"Damage\":0s,\"Name\":\"minecraft:cooked_beef\",\"Slot\":21b,\"WasPickedUp\":0b},{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:shears\",\"Slot\":22b,\"WasPickedUp\":0b},{\"Count\":16b,\"Damage\":0s,\"Name\":\"minecraft:snowball\",\"Slot\":23b,\"WasPickedUp\":0b},{\"Count\":64b,\"Damage\":34s,\"Name\":\"minecraft:arrow\",\"Slot\":24b,\"WasPickedUp\":0b},{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:spyglass\",\"Slot\":25b,\"WasPickedUp\":0b},{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:brush\",\"Slot\":26b,\"WasPickedUp\":0b}],\"RepairCost\":0,\"display\":{\"Lore\":[\"(+DATA)\"],\"Name\":\"新手装备\"}}}"
+        }
+    ]
+}
