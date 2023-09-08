@@ -1,3 +1,5 @@
+const stopServer = ll.imports("stopdelay", "stopServer");
+
 let backupTimeStr = null; // e.g. " 0:00"
 let backupTimeH = null; // e.g. 0
 let backupTimeM = null; // e.g. 0
@@ -38,6 +40,7 @@ function countdown() {
     let s = 60 - tm.s;
     if (tm.h == backupTimeH && tm.m == backupTimeM) {
         broadcast(`§7[§a■§7]§r 服务器即将重启`);
+        if (tm.s == 0) stopServer();
         setTimeout(() => {
             broadcast(`§7[§c■§7]§r 服务器可能重启失败`);
             clearInterval(taskid2);
