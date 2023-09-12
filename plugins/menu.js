@@ -21,6 +21,58 @@ const menuConfig = [
     },
     {
         "type": "menu",
+        "id": "opfuncmenu",
+        "level": 0,
+        "title": "管理员功能",
+        "content": "",
+        "showarrow": true,
+        "image": "textures/ui/permissions_op_crown",
+        "permission": "op",
+        "options": [
+            {
+                "type": "command",
+                "id": "chgamerule",
+                "level": 5,
+                "label": "游戏规则",
+                "command": "chgamerule",
+                "showarrow": true,
+                "image": "textures/ui/sign",
+                "permission": "op"
+            },
+            {
+                "type": "command",
+                "id": "relics",
+                "level": 5,
+                "label": "恢复玩家背包",
+                "command": "relics",
+                "showarrow": true,
+                "image": "textures/blocks/chest_front",
+                "permission": "op"
+            },
+            {
+                "type": "command",
+                "id": "postrk gui",
+                "level": 5,
+                "label": "玩家坐标追踪",
+                "command": "postrk gui",
+                "showarrow": true,
+                "image": "",
+                "permission": "op"
+            },
+            {
+                "type": "command",
+                "id": "emptyxp",
+                "level": 0,
+                "label": "清空经验",
+                "command": "emptyxp",
+                "showarrow": false,
+                "image": "",
+                "permission": "op"
+            }
+        ]
+    },
+    {
+        "type": "menu",
         "id": "tpfuncmenu",
         "level": 1,
         "title": "传送功能",
@@ -80,6 +132,16 @@ const menuConfig = [
                 "permission": "all"
             }
         ]
+    },
+    {
+        "type": "command",
+        "id": "publictp",
+        "level": 2,
+        "label": "公共传送点",
+        "command": "publictp",
+        "showarrow": true,
+        "image": "textures/ui/enable_editor",
+        "permission": "all"
     },
     {
         "type": "menu",
@@ -152,6 +214,88 @@ const menuConfig = [
         "showarrow": true,
         "image": "textures/ui/icon_blackfriday",
         "permission": "all"
+    },
+    {
+        "type": "menu",
+        "id": "otherfuncmenu",
+        "level": 0,
+        "title": "附加功能",
+        "content": "",
+        "showarrow": true,
+        "image": "textures/items/magma_cream",
+        "permission": "all",
+        "options": [
+            {
+                "type": "command",
+                "id": "post",
+                "level": 3,
+                "label": "玩家动态",
+                "command": "post",
+                "showarrow": true,
+                "image": "textures/ui/comment",
+                "permission": "all"
+            },
+            {
+                "type": "command",
+                "id": "rss",
+                "level": 4,
+                "label": "RSS订阅",
+                "command": "rss",
+                "showarrow": true,
+                "image": "textures/ui/broadcast_glyph_color",
+                "permission": "all"
+            },
+            {
+                "type": "command",
+                "id": "yacgm",
+                "level": 5,
+                "label": "地图画",
+                "command": "yacgm",
+                "showarrow": true,
+                "image": "",
+                "permission": "all"
+            },
+            {
+                "type": "command",
+                "id": "nbs",
+                "level": 2,
+                "label": "音乐",
+                "command": "nbs",
+                "showarrow": true,
+                "image": "textures/blocks/noteblock",
+                "permission": "all"
+            },
+            {
+                "type": "command",
+                "id": "stats",
+                "level": 3,
+                "label": "游戏数据",
+                "command": "stats",
+                "showarrow": true,
+                "image": "textures/ui/subscription_glyph_color",
+                "permission": "all"
+            },
+            {
+                "type": "command",
+                "id": "checkin",
+                "level": 0,
+                "label": "签到",
+                "command": "checkin",
+                "showarrow": true,
+                "image": "textures/ui/icon_sign",
+                "permission": "all"
+            },
+            {
+                "type": "command",
+                "id": "cdk",
+                "level": 0,
+                "label": "兑换码",
+                "command": "cdk",
+                "showarrow": true,
+                "image": "textures/ui/promo_gift_small_pink",
+                "permission": "all"
+            }
+        ]
     },
     {
         "type": "menu",
@@ -258,88 +402,6 @@ const menuConfig = [
         ]
     },
     {
-        "type": "menu",
-        "id": "otherfuncmenu",
-        "level": 0,
-        "title": "附加功能",
-        "content": "",
-        "showarrow": true,
-        "image": "textures/items/magma_cream",
-        "permission": "all",
-        "options": [
-            {
-                "type": "command",
-                "id": "post",
-                "level": 3,
-                "label": "玩家动态",
-                "command": "post",
-                "showarrow": true,
-                "image": "textures/ui/comment",
-                "permission": "all"
-            },
-            {
-                "type": "command",
-                "id": "rss",
-                "level": 4,
-                "label": "RSS订阅",
-                "command": "rss",
-                "showarrow": true,
-                "image": "textures/ui/broadcast_glyph_color",
-                "permission": "all"
-            },
-            {
-                "type": "command",
-                "id": "yacgm",
-                "level": 5,
-                "label": "地图画",
-                "command": "yacgm",
-                "showarrow": true,
-                "image": "",
-                "permission": "all"
-            },
-            {
-                "type": "command",
-                "id": "nbs",
-                "level": 2,
-                "label": "音乐",
-                "command": "nbs",
-                "showarrow": true,
-                "image": "textures/blocks/noteblock",
-                "permission": "all"
-            },
-            {
-                "type": "command",
-                "id": "stats",
-                "level": 3,
-                "label": "游戏数据",
-                "command": "stats",
-                "showarrow": true,
-                "image": "textures/ui/subscription_glyph_color",
-                "permission": "all"
-            },
-            {
-                "type": "command",
-                "id": "checkin",
-                "level": 0,
-                "label": "签到",
-                "command": "checkin",
-                "showarrow": true,
-                "image": "textures/ui/icon_sign",
-                "permission": "all"
-            },
-            {
-                "type": "command",
-                "id": "cdk",
-                "level": 0,
-                "label": "兑换码",
-                "command": "cdk",
-                "showarrow": true,
-                "image": "textures/ui/promo_gift_small_pink",
-                "permission": "all"
-            }
-        ]
-    },
-    {
         "type": "command",
         "id": "setspawn",
         "level": 6,
@@ -432,58 +494,6 @@ const menuConfig = [
                 "permission": "all"
             }
         ]
-    },
-    {
-        "type": "menu",
-        "id": "opfuncmenu",
-        "level": 0,
-        "title": "管理员功能",
-        "content": "",
-        "showarrow": true,
-        "image": "textures/ui/permissions_op_crown",
-        "permission": "op",
-        "options": [
-            {
-                "type": "command",
-                "id": "chgamerule",
-                "level": 5,
-                "label": "游戏规则",
-                "command": "chgamerule",
-                "showarrow": true,
-                "image": "textures/ui/sign",
-                "permission": "op"
-            },
-            {
-                "type": "command",
-                "id": "relics",
-                "level": 5,
-                "label": "恢复玩家背包",
-                "command": "relics",
-                "showarrow": true,
-                "image": "textures/blocks/chest_front",
-                "permission": "op"
-            },
-            {
-                "type": "command",
-                "id": "postrk gui",
-                "level": 5,
-                "label": "玩家坐标追踪",
-                "command": "postrk gui",
-                "showarrow": true,
-                "image": "",
-                "permission": "op"
-            },
-            {
-                "type": "command",
-                "id": "emptyxp",
-                "level": 0,
-                "label": "清空经验",
-                "command": "emptyxp",
-                "showarrow": false,
-                "image": "",
-                "permission": "op"
-            }
-        ]
     }
 ];
 // type = menu: title / content / options 子菜单
@@ -520,7 +530,7 @@ function showMenu(pl, config, title, content) {
     if (!content) content = "";
     pl.sendForm(newMenu(config, title, trContent(content, pl), pl.isOP(), getLevel(pl)), (pl, id) => {
         if (id == null) return;
-        const item = config[id];
+        const item = config[getRealIdInConfig(config, pl, id)];
         const isOP = pl.isOP();
         const level = getLevel(pl);
         const locked = ((item.level || 0) > level) && !isOP;
@@ -634,4 +644,20 @@ function getDateAndTimeStr() {
     var second = date.getSeconds();
     if (second < 10) second = "0" + second;
     return month + "/" + day + " " + hour + ":" + minute;
+}
+
+function getRealIdInConfig(config, pl, id) {
+    let realId = 0;
+    for (let i = 0; i < config.length; i++) {
+        const item = config[i];
+        if (item.permission == "op" && !pl.isOP()) { // 不显示按钮的情况
+            continue;
+        } else {
+            if (realId == id) {
+                return i;
+            }
+            realId++;
+        }
+    }
+    return realId;
 }

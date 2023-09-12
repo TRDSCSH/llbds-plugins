@@ -35,6 +35,9 @@ function stopServer() {
     allPlayers.forEach((currentPlayer) => {
         currentPlayer.sendToast("收到关服指令", "服务器将在 " + (DELAY / 1000).toString() + " 秒内关闭。");
     });
+    mc.getOnlinePlayers().forEach((currentPlayer) => {
+        currentPlayer.disconnect("服务器已关闭, 预计完成时间: 01:30");
+    })
     setTimeout(() => {
         mc.runcmdEx("stop");
     }, DELAY)
