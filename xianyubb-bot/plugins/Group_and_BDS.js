@@ -9,7 +9,7 @@ const schedule = require('node-schedule');
 const defaultImagePath = './plugins/img/'; // 文件的保存路径
 const defaultOldImagePath = './plugins/img_old/';
 
-let bdsConnected = 0;
+// let bdsConnected = 0;
 
 if (!fs.existsSync(defaultImagePath)) fs.mkdir(defaultImagePath, (err) => {
     if (err) throw err; // 如果出现错误就抛出错误信息
@@ -56,8 +56,8 @@ let listenGroup = data.ListenGroup
 // image: 'test[CQ:image,file=17aff1023dcc036687f858c1b037c3d5.image,subType=1,url=https://gchat.qpic.cn/gchatpic_new/3245008773/713728802-3080979658-17AFF1023DCC036687F858C1B037C3D5/0?term=3&amp;is_origin=0]'
 
 bds.on("connection", (ws) => {
-    if (bdsConnected == true) return;
-    bdsConnected = true;
+    // if (bdsConnected == true) return;
+    // bdsConnected = true;
     bot.BotEvents.on("onReceiveGroupMessage", (msg) => {
         let data = msg
         const nickname = data.sender.nickname;
@@ -65,7 +65,6 @@ bds.on("connection", (ws) => {
         const message = data.message;
         listenGroup.forEach((group) => {
             if (data.group_id === group) {
-                imageMsgHandle(message, group);
                 ws.send(`[群聊] ${data.sender.role == 'admin' || data.sender.role == 'owner' ? '§6' : ''}${card != '' ? card : nickname}§r(` + data.sender.user_id + ") > " + `${decodeHTMLEntities(messageHandle(message))}`)
             }
         })
@@ -76,6 +75,16 @@ bds.on("connection", (ws) => {
         listenGroup.forEach((e) => {
             bot.send_group_msg(e, data, true)
         })
+    })
+})
+
+bot.BotEvents.on("onReceiveGroupMessage", (msg) => {
+    let data = msg;
+    const message = data.message;
+    listenGroup.forEach((group) => {
+        if (data.group_id === group) {
+            imageMsgHandle(message, group);
+        }
     })
 })
 
