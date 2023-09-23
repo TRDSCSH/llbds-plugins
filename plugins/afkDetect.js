@@ -5,7 +5,7 @@ const dataFilePath = "plugins/afkDetect/data.json";
 let dataFile = new JsonConfigFile(dataFilePath);
 const tag = "AFK";
 const defaultAfkTime = 300;
-const informTime = 250;
+const informTime = 270;
 let onlinePlayers = mc.getOnlinePlayers();
 let taskid = null;
 let onlinePlayerAfkTime = new Map();
@@ -141,9 +141,15 @@ function playerIsInAfkArea(player) {
 function intervalCodes() {
     onlinePlayerAfkTime.forEach((afkTime, xuid) => {
         if (afkTime === defaultAfkTime) {
+            log(`玩家在挂机, Xuid: ${xuid}, Name: ${data.xuid2name(xuid)}`); // test
             const player = mc.getPlayer(xuid);
-            player.tell("§c你正在挂机");
-            setAsAfk(player);
+            if (player == null) {
+                onlinePlayerAfkTime.delete(xuid); // Issue: 为何多出一个xuid
+                return;
+            } else {
+                player.tell("§c你正在挂机");
+                setAsAfk(player);
+            }
         } else if (afkTime > -1) {
             onlinePlayerAfkTime.set(xuid, afkTime + 1);
         } else {
@@ -155,7 +161,7 @@ function intervalCodes() {
         if (afkTime > informTime || afkTime <= -1) {
             let content;
             if (player.hasTag(tag)) {
-                content = `你正在挂机, 已经挂机了 ${-onlinePlayerAfkTime.get(player.xuid)} 秒`;
+                content = `你正在挂机, 已经挂机了 ${-onlinePlayerAfkTime.get(player.xuid) - 2} 秒`;
             } else {
                 content = `距离挂机还有 ${defaultAfkTime - onlinePlayerAfkTime.get(player.xuid)} 秒`;
             }
@@ -171,3 +177,19 @@ function intervalCodes() {
 function getOnlinePlayerCount() {
     return mc.getOnlinePlayers().length;
 }
+
+/*
+17:30:41 ERROR [LiteLoader] script::Exception: Wrong type of argument!
+[failed to obtain stacktrace]
+
+17:30:41 ERROR [LiteLoader] In API: McClass::getPlayer
+17:30:41 ERROR [LiteLoader] In Plugin: afkDetect
+17:30:41 ERROR [LiteLoader] Error occurred in setInterval-Function
+17:30:41 ERROR [LiteLoader] script::Exception: cannot read property 'tell' of undefined
+    at <anonymous> (afkDetect.js:145)
+    at forEach (native)
+    at intervalCodes (afkDetect.js:152)
+
+
+17:30:41 ERROR [LiteLoader] In Plugin: afkDetect
+*/

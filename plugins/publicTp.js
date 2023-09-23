@@ -405,6 +405,7 @@ function showTpMenu(pl, menuConfig, hint = "") {
             mc.spawnParticle(item.pos[0], item.pos[1], item.pos[2], item.pos[3], "minecraft:knockback_roar_particle");
             mc.spawnParticle(pl.pos.x, pl.pos.y, pl.pos.z, pl.pos.dimid, "minecraft:knockback_roar_particle");
             protectPlayer(pl, 10000);
+            tpAnimation(pl);
             // if (item.owner != pl.xuid) {
             //     // money.trans(pl.xuid, "public", Math.floor(item.fee * chargeRate));
             //     // money.trans(pl.xuid, item.owner, item.fee - Math.floor(item.fee * chargeRate));
@@ -499,6 +500,12 @@ function removeXuid(args, type, pl = null) {
             log(str);
         }
     }
+}
+
+function tpAnimation(pl) {
+    const name = pl.realName
+    mc.runcmdEx(`camera ${name} fade time 0.1 0.7 0.5`);
+    pl.setTitle("传送中" ,2);
 }
 
 // function tpProtect(pl) {

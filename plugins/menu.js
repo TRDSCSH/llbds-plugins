@@ -555,6 +555,23 @@ mc.listen("onUseItem", (pl, it) => {
     }
 });
 
+mc.listen("onDestroyBlock", (pl, bl) => {
+    const it = pl.getHand();
+    if (it.type == itemType && pl.gameMode == 1) {
+        return false;
+    }
+});
+
+mc.listen("onAttackEntity", (pl, en, da) => {
+    if (en.isPlayer()) {
+        const it = pl.getHand();
+        if (it.type == itemType) {
+            return false;
+        }
+    }
+});
+
+
 // 显示菜单
 function showMenu(pl, config, title, content) {
     if (!config) config = menuConfig;
