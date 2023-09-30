@@ -412,6 +412,38 @@ const menuConfig = [
         ]
     },
     {
+        "type": "menu",
+        "id": "gamesettingmenu",
+        "level": 3,
+        "title": "游戏设置",
+        "content": "",
+        "showarrow": true,
+        "image": "textures/ui/automation_glyph_color",
+        "permission": "all",
+        "options": [
+            {
+                "type": "command",
+                "id": "chdifficulty",
+                "level": 6,
+                "label": "难度",
+                "command": "chdifficulty",
+                "showarrow": true,
+                "image": "textures/ui/controller_glyph_color",
+                "permission": "all"
+            },
+            {
+                "type": "command",
+                "id": "chpsp",
+                "level": 6,
+                "label": "跳过夜晚所需睡觉的玩家",
+                "command": "chpsp",
+                "showarrow": true,
+                "image": "textures/items/bed_red",
+                "permission": "all"
+            }
+        ]
+    },
+    {
         "type": "command",
         "id": "setspawn",
         "level": 6,
@@ -419,16 +451,6 @@ const menuConfig = [
         "command": "setspawn",
         "showarrow": false,
         "image": "",
-        "permission": "all"
-    },
-    {
-        "type": "command",
-        "id": "chdifficulty",
-        "level": 6,
-        "label": "难度",
-        "command": "chdifficulty",
-        "showarrow": true,
-        "image": "textures/ui/controller_glyph_color",
         "permission": "all"
     },
     {
