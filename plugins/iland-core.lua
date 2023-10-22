@@ -2931,26 +2931,29 @@ RangeSelector = {
 		local dimid = player.pos.dimid
 		local mem = MEM[xuid].rsr
 		if mem.step == 0 then
-			player:sendModalForm(
-				_Tr('title.rangeselector.dimension.chose'),
-				_Tr('title.rangeselector.dimension.tip'),
-				'3D','2D',
-				function (player,res)
-					mem.step = 1
-					if (res and not cfg.land.bought.three_dimension.enable) or (not res and not cfg.land.bought.two_dimension.enable) then
-						SendText(player,_Tr('title.rangeselector.dimension.blocked'))
-						player:runcmd('lands giveup')
-						return
-					end
-					if res then
-						SendText(player,_Tr('title.rangeselector.dimension.chosed','<a>','3D'))
-						mem.dimension = '3D'
-					else
-						SendText(player,_Tr('title.rangeselector.dimension.chosed','<a>','2D'))
-						mem.dimension = '2D'
-					end
-				end
-			)
+			mem.step = 1
+			SendText(player,_Tr('title.rangeselector.dimension.chosed','<a>','3D')) -- Edited
+			mem.dimension = '3D'
+			-- player:sendModalForm(
+			-- 	_Tr('title.rangeselector.dimension.chose'),
+			-- 	_Tr('title.rangeselector.dimension.tip'),
+			-- 	'3D','2D',
+			-- 	function (player,res)
+			-- 		mem.step = 1
+			-- 		if (res and not cfg.land.bought.three_dimension.enable) or (not res and not cfg.land.bought.two_dimension.enable) then
+			-- 			SendText(player,_Tr('title.rangeselector.dimension.blocked'))
+			-- 			player:runcmd('lands giveup')
+			-- 			return
+			-- 		end
+			-- 		if res then
+			-- 			SendText(player,_Tr('title.rangeselector.dimension.chosed','<a>','3D'))
+			-- 			mem.dimension = '3D'
+			-- 		else
+			-- 			SendText(player,_Tr('title.rangeselector.dimension.chosed','<a>','2D'))
+			-- 			mem.dimension = '2D'
+			-- 		end
+			-- 	end
+			-- )
 		elseif mem.step == 1 then
 			if not cfg.features.selection.dimension[dimid+1] then
 				SendText(player,_Tr('title.rangeselector.fail.dimblocked'))
