@@ -1,7 +1,7 @@
 /*
 English:
     Transfer
-    Copyright (C) 2023  StarsDream00 starsdream00@icloud.com
+    Copyright (C) 2023  Hosiyume starsdream00@icloud.com
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU Affero General Public License as published by
@@ -18,7 +18,7 @@ English:
 
 中文：
     转账
-    版权所有 © 2023  星梦喵吖 starsdream00@icloud.com
+    版权所有 © 2023  星梦 starsdream00@icloud.com
     本程序是自由软件：你可以根据自由软件基金会发布的GNU Affero通用公共许可证的条款，即许可证的第3版，
     或（您选择的）任何后来的版本重新发布和/或修改它。
 
@@ -31,11 +31,10 @@ English:
 */
 
 "use strict";
-ll.registerPlugin("Transfer", "转账", [1, 0, 0]);
+ll.registerPlugin("Transfer", "转账", [1, 0, 1]);
 
 const config = new JsonConfigFile("plugins/Transfer/config.json");
 const command = config.init("command", "transfer");
-const rate = config.init("rate", 0.96875);
 const currencyType = config.init("currencyType", "llmoney");
 const currencyName = config.init("currencyName", "元");
 const eco = (() => {
@@ -77,23 +76,30 @@ function main(pl) {
     if (money <= 0) return pl.sendToast("经济", "§c转账失败：余额不足");
     const plnms = [];
     const plxuid = [];
-    for (const pl1 of mc.getOnlinePlayers())
-        if (pl1.xuid != pl.xuid) {
-            plxuid.push(pl1.xuid);
-            let name = pl1.realName;
-            if (ll.hasExported("UserName", "Get"))
-                name = ll.imports("UserName", "Get")(pl1);
-            plnms.push(name);
+    for (const player of mc.getOnlinePlayers())
+        if (player.xuid != pl.xuid) {
+            plxuid.push(player.xuid);
+            plnms.push(
+                ll.hasExported("UserName", "Get")
+                    ? ll.imports("UserName", "Get")(player)
+                    : player.realName
+            );
         }
     if (plnms.length <= 0)
         return pl.sendToast("经济", "§c转账失败：暂无可转账用户");
+    let total = 0;
+    for (const pl of mc.getOnlinePlayers()) total += eco.get(pl);
     pl.sendForm(
         mc
             .newCustomForm()
             .setTitle("转账菜单")
             .addDropdown("目标", plnms)
             .addSlider("数额", 1, money)
-            .addLabel(`当前汇率：${rate * 100}％`),
+            .addLabel(
+                `当前汇率：${
+                    100 - total / 10 ** Math.floor(Math.log10(total))
+                }％`
+            ),
         (pl, args) => {
             if (!args) return;
             const plto = mc.getPlayer(plxuid[args[0]]);
@@ -104,21 +110,24 @@ function main(pl) {
                 );
             if (args[1] > eco.get(pl))
                 return pl.sendToast("经济", "§c转账失败：余额不足");
-            const rlv = Math.round(args[1] * rate);
+            let total = 0;
+            for (const pl of mc.getOnlinePlayers()) total += eco.get(pl);
+            const rlv = Math.round(
+                args[1] *
+                    (1 - total / 10 ** (Math.floor(Math.log10(total)) + 2))
+            );
             if (rlv <= 0) return pl.sendToast("经济", "§c转账失败：数额过小");
             eco.reduce(pl, args[1]);
             eco.add(plto, rlv);
-            let toName = plto.realName;
-            if (ll.hasExported("UserName", "Get"))
-                toName = ll.imports("UserName", "Get")(plto);
             pl.sendToast(
                 "经济",
-                `转账成功：向${toName}转账${args[1]}${eco.name}`
+                `转账成功：向${
+                    ll.hasExported("UserName", "Get")
+                        ? ll.imports("UserName", "Get")(plto)
+                        : plto.realName
+                }转账${args[1]}${eco.name}`
             );
-            let name = pl.realName;
-            if (ll.hasExported("UserName", "Get"))
-                name = ll.imports("UserName", "Get")(pl);
-            plto.sendToast("经济", `${name}向您转账${rlv}${eco.name}`);
+            plto.sendToast("经济", `您收到了${rlv}${eco.name}`);
         }
     );
 }

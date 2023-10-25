@@ -82,7 +82,7 @@ async function sendResult(pl, resultData, amount) {
         await sleep(500);
         pl.tell(`下注金币： ${amount}`);
         await sleep(1500);
-        pl.tell(`抽到倍率： ${color}${result >= 0 ? '+' : ''}${parseFloat(randomRate.toFixed(2))}%%`);
+        pl.tell(`抽到倍率： ${color}${result >= 0 ? '+' : ''}${parseFloat((randomRate * 100).toFixed(2))}%%`);
         await sleep(1500);
         pl.tell(`梭哈结果： ${color}${result >= 0 ? '+' : ''}${result}`);
         await sleep(1500);

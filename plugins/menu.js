@@ -158,7 +158,7 @@ const menuConfig = [
                 "id": "transfer",
                 "level": 2,
                 "label": "转账",
-                "command": "transfer",
+                "command": "zz",
                 "showarrow": true,
                 "image": "textures/ui/trade_icon",
                 "permission": "all"
@@ -521,28 +521,6 @@ const menuConfig = [
                 "level": 5,
                 "label": "粒子特效",
                 "command": "peffect",
-                "showarrow": true,
-                "image": "",
-                "permission": "all"
-            }
-        ]
-    },
-    {
-        "type": "menu",
-        "id": "newpluginsmenu",
-        "level": 0,
-        "title": "新插件测试",
-        "content": "这里是新插件测试菜单，以下插件均为测试插件，可能会出现各种问题，并且不保证以下插件会持续更新，以后的服务器更新可能会移除这些插件。",
-        "showarrow": true,
-        "image": "",
-        "permission": "all",
-        "options": [
-            {
-                "type": "command",
-                "id": "virbox",
-                "level": 2,
-                "label": "多背包(Virbox)",
-                "command": "virbox",
                 "showarrow": true,
                 "image": "",
                 "permission": "all"
