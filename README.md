@@ -1,2 +1,2 @@
 # llbds-plugins
-LiteloaderBDS plugins and tools
+这个仓库存储了适用于 [LiteloaderBDS](https://github.com/LiteLDev/LiteLoaderBDSv2) 和 [LeviLamina](https://github.com/LiteLDev/LeviLamina) 的插件，这些插件曾用于我的基岩版服务端(2022年07月-2024年6月)，其中大部分插件由我自己编写或修改自他人的开源插件。由于我不再维护我开的基岩版服务器，所以将这些插件都公开出来。
