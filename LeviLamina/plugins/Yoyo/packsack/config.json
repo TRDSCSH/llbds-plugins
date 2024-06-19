@@ -1,0 +1,14 @@
+{
+    "price": 0,
+    "currencyName": "金币",
+    "knapsackMax": 5,
+    "currency": {
+        "LLmoney": true,
+        "ScoringTtem": "记分项"
+    },
+    "packsackBtnStr": [
+        "返回",
+        "切换",
+        "删除"
+    ]
+}

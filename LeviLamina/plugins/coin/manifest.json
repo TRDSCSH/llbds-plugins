@@ -1,0 +1,10 @@
+{
+    "entry": "coin.js",
+    "name": "coin",
+    "type": "lse-quickjs",
+    "dependencies": [
+        {
+            "name": "legacy-script-engine-quickjs"
+        }
+    ]
+}

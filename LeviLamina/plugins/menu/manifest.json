@@ -1,0 +1,10 @@
+{
+    "entry": "menu.js",
+    "name": "menu",
+    "type": "lse-quickjs",
+    "dependencies": [
+        {
+            "name": "legacy-script-engine-quickjs"
+        }
+    ]
+}

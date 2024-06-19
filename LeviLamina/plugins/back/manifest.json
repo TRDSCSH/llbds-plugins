@@ -1,0 +1,10 @@
+{
+    "entry": "back.js",
+    "name": "back",
+    "type": "lse-quickjs",
+    "dependencies": [
+        {
+            "name": "legacy-script-engine-quickjs"
+        }
+    ]
+}

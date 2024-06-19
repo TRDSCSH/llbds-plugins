@@ -1,0 +1,10 @@
+{
+    "entry": "RssReader.js",
+    "name": "rss-reader",
+    "type": "lse-nodejs",
+    "dependencies": [
+        {
+            "name": "legacy-script-engine-nodejs"
+        }
+    ]
+}

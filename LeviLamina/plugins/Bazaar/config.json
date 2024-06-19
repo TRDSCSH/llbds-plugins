@@ -1,0 +1,7 @@
+{
+    "command": "bazaar",
+    "initialFunding": 7,
+    "serviceCharge": 0.02,
+    "currencyType": "llmoney",
+    "currencyName": "金币"
+}

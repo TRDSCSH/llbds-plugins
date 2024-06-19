@@ -1,0 +1,6 @@
+{
+    "defaultLocale": "zh_CN",
+    "command": "home",
+    "maxHomeCount": 5,
+    "pageMaxCount": 12
+}

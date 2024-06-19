@@ -1,0 +1,10 @@
+{
+    "entry": "tpsWarn.js",
+    "name": "tpsWarn",
+    "type": "lse-quickjs",
+    "dependencies": [
+        {
+            "name": "legacy-script-engine-quickjs"
+        }
+    ]
+}

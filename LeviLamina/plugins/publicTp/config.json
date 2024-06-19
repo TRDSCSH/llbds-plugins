@@ -1,0 +1,75 @@
+{
+    "bigMenu": {
+        "type": "menu",
+        "permission": "all",
+        "image": "",
+        "showarrow": true,
+        "name": "公共传送点",
+        "desc": "请选择传送点",
+        "owner": "public",
+        "fee": 0,
+        "options": [
+            {
+                "type": "tp",
+                "permission": "all",
+                "image": "",
+                "showarrow": false,
+                "name": "主城区",
+                "pos": [
+                    3,
+                    149,
+                    -4.5,
+                    0
+                ]
+            },
+            {
+                "type": "tp",
+                "permission": "all",
+                "image": "",
+                "showarrow": false,
+                "name": "樱落村",
+                "pos": [
+                    375.5,
+                    97,
+                    925,
+                    0
+                ]
+            },
+            {
+                "type": "tp",
+                "permission": "all",
+                "image": "",
+                "showarrow": false,
+                "name": "城堡",
+                "pos": [
+                    -760.5,
+                    64,
+                    -295.5,
+                    0
+                ]
+            },
+            {
+                "type": "tp",
+                "permission": "all",
+                "image": "",
+                "showarrow": false,
+                "name": "方块博物馆",
+                "pos": [
+                    34,
+                    70,
+                    863,
+                    0
+                ]
+            }
+        ]
+    },
+    "usageData": {
+        "public": 1465
+    },
+    "operators": [
+        "playerxuid"
+    ],
+    "trusted": [
+        "playerxuid"
+    ]
+}

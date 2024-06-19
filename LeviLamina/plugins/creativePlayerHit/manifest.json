@@ -1,0 +1,10 @@
+{
+    "entry": "creativePlayerHit.js",
+    "name": "creativePlayerHit",
+    "type": "lse-quickjs",
+    "dependencies": [
+        {
+            "name": "legacy-script-engine-quickjs"
+        }
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "entry": "Sprite's_Chain_Gather.js",
+    "name": "Sprite's_Chain_Gather",
+    "type": "lse-quickjs",
+    "dependencies": [
+        {
+            "name": "legacy-script-engine-quickjs"
+        }
+    ]
+}

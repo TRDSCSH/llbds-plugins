@@ -1,0 +1,60 @@
+{
+    "playerxuid": [
+        {
+            "title": "MineBBS 我的世界中文论坛",
+            "url": "https://www.minebbs.com/forums/-/index.rss",
+            "hel": [
+                "title",
+                "link",
+                "image",
+                "category",
+                "items"
+            ],
+            "hef": [
+                [
+                    "description",
+                    0,
+                    null,
+                    null
+                ]
+            ],
+            "iel": [
+                "id",
+                "author",
+                "created",
+                "category",
+                "content",
+                "enclosures",
+                "content_encoded",
+                "media",
+                "description"
+            ],
+            "itf": [
+                [
+                    "title",
+                    0,
+                    null,
+                    "§l%%§r"
+                ],
+                [
+                    "link",
+                    1,
+                    null,
+                    null
+                ],
+                [
+                    "published",
+                    1,
+                    null,
+                    null
+                ],
+                [
+                    "description",
+                    0,
+                    null,
+                    null
+                ]
+            ]
+        }
+    ]
+}

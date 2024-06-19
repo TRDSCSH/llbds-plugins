@@ -1,0 +1,9 @@
+{
+    "command": "express",
+    "serviceCharge": {
+        "min": 0,
+        "max": 0
+    },
+    "currencyType": "llmoney",
+    "currencyName": "金币"
+}

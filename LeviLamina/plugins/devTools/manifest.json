@@ -1,0 +1,10 @@
+{
+    "entry": "devTools.js",
+    "name": "devTools",
+    "type": "lse-quickjs",
+    "dependencies": [
+        {
+            "name": "legacy-script-engine-quickjs"
+        }
+    ]
+}

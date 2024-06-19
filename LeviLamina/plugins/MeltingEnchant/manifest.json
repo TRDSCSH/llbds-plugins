@@ -1,0 +1,13 @@
+{
+  "entry": "lse_self.ll.js",
+  "name": "MeltingEnchant",
+  "type": "lse-quickjs",
+  "author": "Moonlight_uu",
+  "version": "2.5.1",
+  "dependencies": [
+    {
+      "name": "legacy-script-engine-quickjs",
+	  "dependencie": "熔炉炼制附魔"
+    }
+  ]
+}

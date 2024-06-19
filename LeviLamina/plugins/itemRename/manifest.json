@@ -1,0 +1,10 @@
+{
+    "entry": "itemRename.js",
+    "name": "itemRename",
+    "type": "lse-quickjs",
+    "dependencies": [
+        {
+            "name": "legacy-script-engine-quickjs"
+        }
+    ]
+}

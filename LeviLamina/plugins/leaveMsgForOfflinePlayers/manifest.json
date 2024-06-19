@@ -1,0 +1,10 @@
+{
+    "entry": "leaveMsgForOfflinePlayers.js",
+    "name": "leaveMsgForOfflinePlayers",
+    "type": "lse-quickjs",
+    "dependencies": [
+        {
+            "name": "legacy-script-engine-quickjs"
+        }
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "language": "zh_CN",
+    "timezone": {
+        "auto": true,
+        "offset": 8
+    },
+    "backupLocation": "./plugins/PlayerStatsTracker/backups",
+    "exportLocation": "./plugins/PlayerStatsTracker/exports",
+    "databaseSaveInterval": 10000
+}

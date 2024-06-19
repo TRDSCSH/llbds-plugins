@@ -1,0 +1,10 @@
+{
+    "entry": "vote.js",
+    "name": "vote",
+    "type": "lse-quickjs",
+    "dependencies": [
+        {
+            "name": "legacy-script-engine-quickjs"
+        }
+    ]
+}

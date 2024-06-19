@@ -1,0 +1,5 @@
+{
+    "name": "AutoReload",
+    "entry": "AutoReload.dll",
+    "type": "native"
+}

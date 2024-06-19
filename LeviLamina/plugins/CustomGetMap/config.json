@@ -1,0 +1,13 @@
+{
+    "CONFIG": "此为CustomGetMap的配置文件 | by Wn1027",
+    "onlyOP": false,
+    "onlyMyMap": true,
+    "tips": true,
+    "setInterval": 50,
+    "isSaveOriImg": false,
+    "maxMapNum": 400,
+    "imgGetSize": "imgGetSize_stb.exe",
+    "img2bin": "img2bin_stb.exe",
+    "imgResize": "imgResize_stb.exe",
+    "python": "python"
+}

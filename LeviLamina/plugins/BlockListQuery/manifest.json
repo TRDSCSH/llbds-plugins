@@ -1,0 +1,10 @@
+{
+    "entry": "BlockListQuery.js",
+    "name": "BlockListQuery",
+    "type": "lse-quickjs",
+    "dependencies": [
+        {
+            "name": "legacy-script-engine-quickjs"
+        }
+    ]
+}

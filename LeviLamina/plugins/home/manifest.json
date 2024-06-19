@@ -1,0 +1,10 @@
+{
+    "entry": "home.js",
+    "name": "home",
+    "type": "lse-quickjs",
+    "dependencies": [
+        {
+            "name": "legacy-script-engine-quickjs"
+        }
+    ]
+}

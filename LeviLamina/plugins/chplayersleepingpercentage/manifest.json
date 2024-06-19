@@ -1,0 +1,10 @@
+{
+    "entry": "chplayersleepingpercentage.js",
+    "name": "chplayersleepingpercentage",
+    "type": "lse-quickjs",
+    "dependencies": [
+        {
+            "name": "legacy-script-engine-quickjs"
+        }
+    ]
+}

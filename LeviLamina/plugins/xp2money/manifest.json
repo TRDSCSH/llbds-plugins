@@ -1,0 +1,10 @@
+{
+    "entry": "xp2money.js",
+    "name": "xp2money",
+    "type": "lse-quickjs",
+    "dependencies": [
+        {
+            "name": "legacy-script-engine-quickjs"
+        }
+    ]
+}

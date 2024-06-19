@@ -1,0 +1,11 @@
+
+{
+    "entry": "MessageSync.js",
+    "name": "MessageSync",
+    "type": "lse-quickjs",
+    "dependencies": [
+        {
+            "name": "legacy-script-engine-quickjs"
+        }
+    ]
+}

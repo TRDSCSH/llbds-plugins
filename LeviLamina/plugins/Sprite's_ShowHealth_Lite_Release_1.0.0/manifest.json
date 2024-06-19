@@ -1,0 +1,10 @@
+{
+    "entry": "Sprite's_ShowHealth_Lite_Release_1.0.0.js",
+    "name": "Sprite's_ShowHealth_Lite_Release_1.0.0",
+    "type": "lse-quickjs",
+    "dependencies": [
+        {
+            "name": "legacy-script-engine-quickjs"
+        }
+    ]
+}

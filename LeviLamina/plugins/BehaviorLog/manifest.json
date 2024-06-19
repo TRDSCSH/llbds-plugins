@@ -1,0 +1,10 @@
+{
+    "entry": "BehaviorLog.js",
+    "name": "BehaviorLog",
+    "type": "lse-quickjs",
+    "dependencies": [
+        {
+            "name": "legacy-script-engine-quickjs"
+        }
+    ]
+}

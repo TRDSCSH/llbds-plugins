@@ -1,0 +1,10 @@
+{
+    "entry": "chgamerule.js",
+    "name": "chgamerule",
+    "type": "lse-quickjs",
+    "dependencies": [
+        {
+            "name": "legacy-script-engine-quickjs"
+        }
+    ]
+}

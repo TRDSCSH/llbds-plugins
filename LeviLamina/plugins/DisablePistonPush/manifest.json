@@ -1,0 +1,10 @@
+{
+    "entry": "DisablePistonPush.js",
+    "name": "DisablePistonPush",
+    "type": "lse-quickjs",
+    "dependencies": [
+        {
+            "name": "legacy-script-engine-quickjs"
+        }
+    ]
+}

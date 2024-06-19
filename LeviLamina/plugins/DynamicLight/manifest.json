@@ -1,0 +1,5 @@
+{
+    "name": "DynamicLight",
+    "entry": "DynamicLight.dll",
+    "type": "native"
+}

@@ -1,0 +1,10 @@
+{
+    "entry": "stopdelay.js",
+    "name": "stopdelay",
+    "type": "lse-quickjs",
+    "dependencies": [
+        {
+            "name": "legacy-script-engine-quickjs"
+        }
+    ]
+}

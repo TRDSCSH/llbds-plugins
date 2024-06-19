@@ -1,0 +1,10 @@
+{
+    "entry": "PlayerStatsTracker.js",
+    "name": "PlayerStatsTracker",
+    "type": "lse-quickjs",
+    "dependencies": [
+        {
+            "name": "legacy-script-engine-quickjs"
+        }
+    ]
+}

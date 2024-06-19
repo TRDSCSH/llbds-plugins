@@ -1,0 +1,10 @@
+{
+    "entry": "post.js",
+    "name": "post",
+    "type": "lse-quickjs",
+    "dependencies": [
+        {
+            "name": "legacy-script-engine-quickjs"
+        }
+    ]
+}

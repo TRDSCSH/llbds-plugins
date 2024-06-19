@@ -1,0 +1,10 @@
+{
+    "entry": "notice.js",
+    "name": "notice",
+    "type": "lse-quickjs",
+    "dependencies": [
+        {
+            "name": "legacy-script-engine-quickjs"
+        }
+    ]
+}

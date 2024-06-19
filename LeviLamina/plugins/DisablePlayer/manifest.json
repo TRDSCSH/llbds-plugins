@@ -1,0 +1,10 @@
+{
+    "entry": "DisablePlayer.js",
+    "name": "DisablePlayer",
+    "type": "lse-quickjs",
+    "dependencies": [
+        {
+            "name": "legacy-script-engine-quickjs"
+        }
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "entry": "devBar.js",
+    "name": "devBar",
+    "type": "lse-quickjs",
+    "dependencies": [
+        {
+            "name": "legacy-script-engine-quickjs"
+        }
+    ]
+}

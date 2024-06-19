@@ -1,0 +1,10 @@
+{
+    "entry": "chatBackup.js",
+    "name": "chatBackup",
+    "type": "lse-quickjs",
+    "dependencies": [
+        {
+            "name": "legacy-script-engine-quickjs"
+        }
+    ]
+}

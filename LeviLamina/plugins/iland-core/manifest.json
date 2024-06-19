@@ -1,0 +1,10 @@
+{
+    "entry": "iland-core.lua",
+    "name": "iland-core",
+    "type": "lse-lua",
+    "dependencies": [
+        {
+            "name": "legacy-script-engine-lua"
+        }
+    ]
+}

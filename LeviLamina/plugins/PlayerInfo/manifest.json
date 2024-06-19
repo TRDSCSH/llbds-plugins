@@ -1,0 +1,10 @@
+{
+    "entry": "PlayerInfo.js",
+    "name": "PlayerInfo",
+    "type": "lse-quickjs",
+    "dependencies": [
+        {
+            "name": "legacy-script-engine-quickjs"
+        }
+    ]
+}

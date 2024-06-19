@@ -1,0 +1,10 @@
+{
+    "entry": "particleStick.js",
+    "name": "particleStick",
+    "type": "lse-quickjs",
+    "dependencies": [
+        {
+            "name": "legacy-script-engine-quickjs"
+        }
+    ]
+}

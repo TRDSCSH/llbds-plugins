@@ -1,0 +1,20 @@
+插件安装说明：https://www.minebbs.com/resources/customgetmap-custommap.4050/
+
+修改config.json 中的 “imgResize” 来选择裁剪程序。
+可选项为： 'imgResize.exe' 或 'imgResize.ps1' 或 'imgResize.py' 或 'imgResize.exe'
+优先级从先往后
+
+'imgResize_stb.exe'
+利用C++ stb_image.h裁剪
+
+'imgResize.ps1'
+利用PowerShell进行裁剪。
+
+'imgResize.py'
+使用Python进行裁剪，需配置Python环境，及安装cv2依赖库。
+
+'imgResize.exe'
+py版的打包exe版，50MB，启动较慢。
+
+cutMap.exe下载地址: https://wwu.lanzoum.com/iZkZm0cizpmd 密码:8z0i
+下载后请重命名为imgResize.exe。

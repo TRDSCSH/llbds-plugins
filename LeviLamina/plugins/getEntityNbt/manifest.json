@@ -1,0 +1,10 @@
+{
+    "entry": "getEntityNbt.js",
+    "name": "getEntityNbt",
+    "type": "lse-quickjs",
+    "dependencies": [
+        {
+            "name": "legacy-script-engine-quickjs"
+        }
+    ]
+}

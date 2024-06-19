@@ -1,0 +1,10 @@
+{
+    "entry": "packsackYoyo.lxl.js",
+    "name": "packsackYoyo",
+    "type": "lse-quickjs",
+    "dependencies": [
+        {
+            "name": "legacy-script-engine-quickjs"
+        }
+    ]
+}

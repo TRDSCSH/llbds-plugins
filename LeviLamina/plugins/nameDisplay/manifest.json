@@ -1,0 +1,10 @@
+{
+    "entry": "nameDisplay.js",
+    "name": "nameDisplay",
+    "type": "lse-quickjs",
+    "dependencies": [
+        {
+            "name": "legacy-script-engine-quickjs"
+        }
+    ]
+}

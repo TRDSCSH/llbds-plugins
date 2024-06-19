@@ -1,0 +1,10 @@
+{
+  "entry": "ShowFormation.js",
+  "name": "ShowFormation",
+  "type": "lse-quickjs",
+  "dependencies": [
+    {
+      "name": "legacy-script-engine-quickjs"
+    }
+  ]
+}

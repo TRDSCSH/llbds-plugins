@@ -1,0 +1,30 @@
+{
+    "Language": "zh_CN",
+    "exe_7z_path": "./plugins/EasyBackuper/7za.exe",
+    "BackupFolderPath": "C:/Desktop/MinecraftWorldBackup",
+    "Auto_Clean": {
+        "Use_Number_Detection": {
+            "Status": true,
+            "Max_Number": 3
+        }
+    },
+    "Scheduled_Tasks": {
+        "Status": false,
+        "Cron": "0 0 0 * * *"
+    },
+    "Broadcast": {
+        "Status": true,
+        "Time_ms": 5000,
+        "Title": "要开始备份啦~",
+        "Message": "将于 5 秒后进行备份！",
+        "Server_Title": "EasyBackuper",
+        "Server_Message": "服务端备份开始",
+        "Backup_success_Title": "EasyBackuper",
+        "Backup_success_Message": "备份完成！ :)",
+        "Backup_wrong_Title": "EasyBackuper",
+        "Backup_wrong_Message": "备份失败 (ToT)"
+    },
+    "Debug_MoreLogs": false,
+    "Debug_MoreLogs_Player": false,
+    "Debug_MoreLogs_Cron": false
+}

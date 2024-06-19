@@ -1,0 +1,10 @@
+{
+    "entry": "ilandFly.js",
+    "name": "ilandFly",
+    "type": "lse-quickjs",
+    "dependencies": [
+        {
+            "name": "legacy-script-engine-quickjs"
+        }
+    ]
+}

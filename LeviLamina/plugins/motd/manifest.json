@@ -1,0 +1,10 @@
+{
+    "entry": "motd.js",
+    "name": "motd",
+    "type": "lse-quickjs",
+    "dependencies": [
+        {
+            "name": "legacy-script-engine-quickjs"
+        }
+    ]
+}

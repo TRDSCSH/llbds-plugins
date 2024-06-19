@@ -1,0 +1,10 @@
+{
+    "entry": "showParticleLine.js",
+    "name": "showParticleLine",
+    "type": "lse-quickjs",
+    "dependencies": [
+        {
+            "name": "legacy-script-engine-quickjs"
+        }
+    ]
+}

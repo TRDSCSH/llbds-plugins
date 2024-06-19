@@ -1,0 +1,9 @@
+{
+  "name": "rss-reader",
+  "version": "1.0.0",
+  "description": "RSS Feeds Reader for Minecraft Bedrock Edition with LiteLoaderBDS.",
+  "main": "RssReader.js",
+  "dependencies": {
+    "rss-to-json": "^2.1.1"
+  }
+}

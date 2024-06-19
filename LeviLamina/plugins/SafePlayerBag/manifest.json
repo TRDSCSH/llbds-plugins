@@ -1,0 +1,12 @@
+{
+  "entry": "SafePlayerBag.js",
+  "name": "SafePlayerBag",
+  "type": "lse-quickjs",
+  "author": "PHEyeji",
+  "dependencies": [
+    {
+      "name": "legacy-script-engine-quickjs",
+	  "dependencie": "外部存储玩家背包"
+    }
+  ]
+}

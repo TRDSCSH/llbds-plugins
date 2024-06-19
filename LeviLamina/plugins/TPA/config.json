@@ -1,0 +1,12 @@
+{
+    "economy": {
+        "type": "llmoney",
+        "object": "money",
+        "price": 0,
+        "name": "金币"
+    },
+    "tpa": {
+        "timeout": 30,
+        "check_frequency": 1000
+    }
+}

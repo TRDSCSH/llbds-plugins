@@ -1,0 +1,10 @@
+{
+    "entry": "soha.js",
+    "name": "soha",
+    "type": "lse-quickjs",
+    "dependencies": [
+        {
+            "name": "legacy-script-engine-quickjs"
+        }
+    ]
+}

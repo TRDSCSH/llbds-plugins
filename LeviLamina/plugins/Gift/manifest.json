@@ -1,0 +1,10 @@
+{
+    "entry": "Gift.js",
+    "name": "Gift",
+    "type": "lse-quickjs",
+    "dependencies": [
+        {
+            "name": "legacy-script-engine-quickjs"
+        }
+    ]
+}

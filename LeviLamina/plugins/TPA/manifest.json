@@ -1,0 +1,10 @@
+{
+    "entry": "TPA.js",
+    "name": "TPA",
+    "type": "lse-quickjs",
+    "dependencies": [
+        {
+            "name": "legacy-script-engine-quickjs"
+        }
+    ]
+}
